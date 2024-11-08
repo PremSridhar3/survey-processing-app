@@ -1,0 +1,10 @@
+# Ignore virtual environment folder
+educhamp/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore any temporary or system files
+*.log
+.DS_Store
