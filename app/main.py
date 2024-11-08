@@ -15,12 +15,12 @@ logging.basicConfig(level=logging.DEBUG)  # Adjust logging level as needed
 logger = logging.getLogger(__name__)
 
 # MongoDB setup
-mongo_client = AsyncIOMotorClient("mongodb+srv://premkumarsridharks:Premkumar.2000@cluster0.8psxq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+mongo_client = AsyncIOMotorClient("Your MongoDB URL")
 db = mongo_client["survey_db"]
 collection = db["surveys"]
 
 # Set up OpenAI API key from the environment
-genai.configure(api_key="AIzaSyADwknCK9wA-x-pHRAJsvLrMw0i-sFUpvo")
+genai.configure(api_key="Your Google Gemini API Key")
 
 # Initialize the Gemini model
 model = genai.GenerativeModel("gemini-1.5-flash")
